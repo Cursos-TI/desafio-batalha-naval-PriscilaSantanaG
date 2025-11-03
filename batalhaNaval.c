@@ -41,7 +41,39 @@ int main()
             }
         }
     }
+    //criar habilidades
 
+    // habilidade em cone
+    tabuleiro[4][2] = 3; // cima do cone
+   for (int i = 0; i < 3; i++)
+   {
+         tabuleiro[5][1 + i] = 3; // meio do cone
+   }
+   for (int i = 0; i < 5; i++)
+   {
+         tabuleiro[6][0 + i] = 3; // baixo
+   }
+   
+   //habilidade em cruz
+   for (int j = 0; j < 3; j++)
+   {
+    tabuleiro[7][8] = 3; // centro da cruz
+    tabuleiro[6 + j][8] = 3; // vertical cima e baixo
+    tabuleiro[7][7 + j] = 3; // horizontal esquerda e direita
+   }
+
+   //habilidade em octaedro
+    tabuleiro[2][7] = 3; // cima
+    tabuleiro[3][6]=3;
+    tabuleiro[3][7]=3;
+    tabuleiro[3][8]=3;
+    tabuleiro[4][7]=3;
+    tabuleiro[4][8]=3;
+    tabuleiro[2][6]=3;
+   
+   
+    
+    
     // imprimindo o tabuleiro
     for (int lin = 0; lin < 10; lin++)
     {
