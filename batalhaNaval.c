@@ -55,11 +55,13 @@ int main()
    }
    
    //habilidade em cruz
-   for (int j = 0; j < 3; j++)
+   for (int j = 0; j < 5; j++)
    {
-    tabuleiro[7][8] = 3; // centro da cruz
-    tabuleiro[6 + j][8] = 3; // vertical cima e baixo
-    tabuleiro[7][7 + j] = 3; // horizontal esquerda e direita
+    tabuleiro[7][7] = 3; // centro da cruz
+    tabuleiro[8][6] = 3; // vertical cima e baixo
+    tabuleiro[9][7] = 3; // horizontal esquerda e direita
+    //meio da cruz
+    tabuleiro[8][5 + j] = 3;
    }
 
    //habilidade em octaedro
@@ -68,8 +70,8 @@ int main()
     tabuleiro[3][7]=3;
     tabuleiro[3][8]=3;
     tabuleiro[4][7]=3;
-    tabuleiro[4][8]=3;
-    tabuleiro[2][6]=3;
+    tabuleiro[4][7]=3;
+    
    
    
     
